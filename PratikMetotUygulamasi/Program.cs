@@ -30,7 +30,7 @@ namespace PratikMetotUygulamasi
             Random rnd = new Random();
             int rastgele = rnd.Next(10,21);
             Console.WriteLine($"\nRastgele üretilen sayı = {rastgele} ");
-            return (double)rastgele / 2;
+            return (double)rastgele % 2;
         }
 
         static double CarpimSonucu(double a,double b) // Parametre Alan ve Geriye Değer Döndüren Bir Metot
