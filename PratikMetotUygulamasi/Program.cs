@@ -3,9 +3,9 @@ namespace PratikMetotUygulamasi
 {
     class Program
     {
-        static void Main()
+        static void Main() // Ana metot oluşturup diğer metotları buradan çağırdım.
         {
-            SarkiSozu();        
+            SarkiSozu();          
             Console.WriteLine($"Bölümün sonucu = {GeriyeSayi()}");
             Random rnd = new Random();
             double a = rnd.Next(1,11);
@@ -17,14 +17,14 @@ namespace PratikMetotUygulamasi
             EkranaYazdir(name, surname);
 
         }
-        static void SarkiSozu()
+        static void SarkiSozu() // Geriye Değer Döndürmeyen Bir void metot.
         {
             // Ekrana sevdiğiniz bir şarkı sözünü yazdırsın. 
             Console.WriteLine("Aşkın ateşi yakarmış ateşi");
         }
 
         
-        static double GeriyeSayi()
+        static double GeriyeSayi() // Geriye Tamsayı Döndüren Bir metot
         {
             // Rastgele bir sayı üretip bu sayının 2'ye bölümünden kalanı geriye döndürsün.
             Random rnd = new Random();
@@ -33,13 +33,13 @@ namespace PratikMetotUygulamasi
             return (double)rastgele / 2;
         }
 
-        static double CarpimSonucu(double a,double b)
+        static double CarpimSonucu(double a,double b) // Parametre Alan ve Geriye Değer Döndüren Bir Metot
         {
             // Parametre olarak aldığı iki sayının çarpımını geriye dönsün.
             return a * b;
         }
 
-        static void EkranaYazdir(string a,string b)
+        static void EkranaYazdir(string a,string b) // Parametre Alan ve Geriye Değer Döndürmeyen bir Metot
         {
             // Parametre olarak isim ve soyisim bilgilerini alıp " Hoş Geldiniz {isim} {soyisim} " şeklinde ekrana bassın.
             Console.WriteLine($"\nHoşgeldiniz {a} {b}");
